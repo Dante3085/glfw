@@ -39,9 +39,9 @@
 
   defines
   {
-    "GLFW_WIN32",
+    "_GLFW_WIN32",
     "_CRT_SECURE_NO_WARNINGS"
   }
   
-  filter { "system:windows", "configuration:Release" } -- This filter only applies when the system is windows AND the configuration is Release
+  filter { "system:windows", "configurations:Release" } -- This filter only applies when the system is windows AND the configuration is Release
     buildoptions "/MT"
